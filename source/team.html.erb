@@ -1,0 +1,8 @@
+<% data.team.each do |member, info| %>
+
+<div><%= member %></div>
+<div><%= info.role %></div>
+
+<%= image_tag info.picture, width: 200 %>
+
+<% end %>

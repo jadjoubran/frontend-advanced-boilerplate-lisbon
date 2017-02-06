@@ -1,0 +1,25 @@
+<h1>About page</h1>
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eum culpa corrupti vel iste laboriosam id nostrum, eaque placeat, sunt aliquam ut. Repellat, optio minima incidunt obcaecati ea repudiandae officia!
+</p>
+
+<ul class="list-inline">
+	<% counter = 0 %>
+	<% %w(shannon boris seb).each do |member| %>
+		<% counter += 1 %>
+	<li>
+		<h2 class="about-title"><%= member.capitalize %></h2>
+		<!-- <img width="200" src="https://www.bunnyholder.com/500/500" alt="Bunny"> -->
+		<%= image_tag "https://www.bunnyholder.com/#{counter * 100}/#{counter * 100}", alt: "Bunny", width: 200 %>
+	</li>
+	<% end %>
+<!-- 	<li>
+		<h2>Boris</h2>
+		<img width="200" src="https://www.bunnyholder.com/400/400" alt="Bunny">
+	</li>
+	<li>
+		<h2>Seb</h2>
+		<img width="200" src="https://www.bunnyholder.com/600/600" alt="Bunny">
+	</li> -->
+</ul>
